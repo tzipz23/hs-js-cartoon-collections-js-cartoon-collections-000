@@ -4,8 +4,10 @@ planeteerCalls = ["earth", "wind", "fire", "water", "heart"]
 
 function dwarfRollCall(dwarves) {
   var array = [];
-for(var i = 0; i< dwarves.length; i++) {
-   
+dwarves.forEach(function(name, obj) {
+  	array += (obj+1 + ". " + name + " ");
+  });
+   return array
 }
 
 function summonCaptainPlanet(planeteerCalls) {
@@ -26,7 +28,6 @@ function findTheCheese (foods) {
   if (foods[i]=="cheddar"
     ||foods[i]=="gouda"
     ||foods[i]=="camembert"
-    ||foods[i]=="swiss cheese"
   ){
     return foods[i]
   }
