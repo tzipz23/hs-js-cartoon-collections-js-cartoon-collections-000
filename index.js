@@ -4,10 +4,8 @@ planeteerCalls = ["earth", "wind", "fire", "water", "heart"]
 
 function dwarfRollCall(dwarves) {
   var array = [];
-dwarves.forEach(function(name, obj) {
-  	array += (obj+1 + ". " + name + " ");
-  });
-   return array
+for(var i = 0; i< dwarves.length; i++) {
+   if (dwarves[i])
 }
 
 function summonCaptainPlanet(planeteerCalls) {
